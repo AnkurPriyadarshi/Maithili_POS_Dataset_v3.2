@@ -1,0 +1,34 @@
+\\ "अ","आ", "इ", "ई", "उ", "ऊ", "ऋ"
+             , "ऌ" ,"ऍ",  "ए", "ऐ", "ऑ", "ओ", "औ",
+
+
+             "क", "ख", "ग", "घ" ,"ङ",
+             "च" ,"छ" ,"ज"," झ"," ञ",
+             "ट","ठ", "ड"," ढ"," ण",
+             "त", "थ", "द", "ध", "न",
+             "प", "फ", "ब"," भ","म",
+             "य", "र", "ल", "ळ",
+             "व", "श" ,"ष","स" ,"ह"
+
+
+
+
+
+
+
+public class WordstoChar{
+
+     public static void main(String []args){
+        String a = "मैथिलि भाषाकेँ संविधानिक अष्टम अनुसूचीमे शामिल हेबाक बात होईहो";
+             int strLen = a.length();
+             char array[] = new char[strLen];
+             String strArray1[] = new String[strLen];
+             for (int i=0 ; i< strLen ; i++)
+             {
+                 array[i] = a.charAt(i);
+                 strArray1[i] = Character.toString(a.charAt(i));
+                 System.out.println ("Index = " + i + "* Char = " +array[i] + "** String =" +strArray1[i] );
+
+             }
+     }
+}
